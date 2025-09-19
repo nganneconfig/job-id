@@ -549,7 +549,7 @@ end)
 spawn(function()
     while ScreenGui.Parent do
         updatePlayerCount()
-        wait(2)
+        wait(0.5)
     end
 end)
 
