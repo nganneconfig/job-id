@@ -374,7 +374,7 @@ local function loadJobIdFromClipboard()
     end)
     
     -- Đợi 0.5 giây như yêu cầu
-    wait(0.5)
+    wait(1)
     
     local success = false
     
@@ -431,7 +431,7 @@ local function loadJobIdFromClipboard()
     
     -- Đợi một chút rồi reset text nếu cần
     spawn(function()
-        wait(1)
+        wait(2)
         if not _G.SpamJoin then
             SpamJoinButton.Text = originalText
             SpamJoinButton.BackgroundColor3 = Color3.fromRGB(40, 40, 50)
